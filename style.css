@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e60606;
+    margin: 10;
+    padding: 10;
+    text-align: center;
+}
+
+header {
+    background-color: #f5f1f1;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    background-color: #1c00bd;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.latest-uploads {
+    flex: 2;
+    background: rgb(216, 216, 216);
+    padding: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.Uploads h2 {
+    text-align: middle;
+}
+
+.post {
+    border: 2px solid rgb(253, 251, 251);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.read-more {
+    background-color: #da0101;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.learn-more-links {
+    position: right;
+    z-index: 100;
+}
+
+.read-more:hover {
+    background-color: #f5f0f0;
+}
+
+.sidebar {
+    flex: 1;
+    background: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 100 100 10px rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #2417df;
+    font-weight: bold;
+}
+
+/* Video Section */
+.video-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgb(247, 247, 247);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .latest-uploads, .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
